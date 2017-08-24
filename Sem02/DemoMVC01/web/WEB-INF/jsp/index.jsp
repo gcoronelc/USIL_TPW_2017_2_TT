@@ -10,7 +10,7 @@
 
   <body>
     <p>CUADRADO</p>
-    <form method="post" action="procesar.htm">
+    <form method="post" action="procesar2.htm">
       <label>Número:</label>
       <input type="text" name="num" />
       <input type="submit" value="Procesar" />
