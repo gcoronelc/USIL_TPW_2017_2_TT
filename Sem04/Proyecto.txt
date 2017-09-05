@@ -1,0 +1,11 @@
+Desarrollar una calculadora
+basica, para operar:
+
+- Suma
+- Resta
+- Multiplicación
+- División
+- Residuo o resto 
+
+Todo en base a dos números.
+
