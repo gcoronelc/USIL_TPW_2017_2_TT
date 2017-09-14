@@ -1,0 +1,84 @@
+create table administrador(
+id_admin char(5),
+nombre_admin varchar(50),
+apell_admin varchar(50),
+direccion_admin varchar(50),
+telefono varchar(20),
+email varchar(30),
+id_propie char(5),
+primary key (id_admin));
+
+create table propietario(
+id_propie char(5),
+dni_propie int,
+nombre_propie varchar(50),
+ape_propie varchar(50),
+direccion_propie varchar(50),
+telefono varchar(20),
+cant_inmuebles int,
+email varchar(30),
+id_admin char(5),
+id_pago char(5),
+primary key (id_propie));
+
+create table ingreso(
+id_ingreso char(5),
+tipo_ingreso varchar(50),
+cantidad numeric(8,2),
+gastos numeric(8,2),
+ingresos numeric(8,2),
+descrip_ingreso varchar(100),
+fecha_ingre date,
+id_pago char(5),
+primary key(id_ingreso));
+
+create table pago(
+id_pago char(5),
+fe_cha_pago date,
+id_inmueble char(5),
+cantidad numeric(8,2),
+detalle varchar(100),
+id_propie char(5),
+primary key (id_pago ));
+
+create table Servicio(
+id_servicio char(5),
+nombre_servicio varchar(30),
+descripcion varchar(100),
+id_inmueble char(5),
+primary key (id_servicio));
+
+create table Inmueble(
+id_Inmueble char(5),
+num_inmueble int,
+tipo_inmueble varchar(100),
+id_propie char(5),
+id_admin char(5),
+costo numeric(8,2),
+primary key(id_Inmueble));
+
+
+
+
+alter table administrador add foreign key(id_propie)
+references propietario(id_propie);
+
+alter table propietario add foreign key(id_pago)
+references pago(id_pago);
+
+alter table ingreso add foreign key(id_pago)
+references pago(id_pago);
+
+alter table Servicio add foreign key(id_Inmueble)
+references Inmueble(id_Inmueble);
+
+alter table Inmueble add foreign key(id_admin)
+references administrador(id_admin);
+
+alter table Inmueble add foreign key(id_propie)
+references propietario(id_propie);
+
+alter table Inmueble add foreign key(id_servicio)
+references servicio(id_servicio);
+
+
