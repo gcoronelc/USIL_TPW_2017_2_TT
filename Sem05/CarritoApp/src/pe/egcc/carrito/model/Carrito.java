@@ -32,6 +32,7 @@ public class Carrito {
 
   public void agregar(Item item){
     lista.add(item);
+    item.setSubtotal(item.getPrecio() * item.getCant());
     ordenarIds();
     calcularTotal();
   }

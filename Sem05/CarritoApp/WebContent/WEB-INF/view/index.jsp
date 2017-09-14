@@ -7,6 +7,10 @@
 <title>CARRITO APP</title>
 </head>
 <body>
-<p>Esto recien empieza.</p>
+
+  <jsp:include page="cabecera.jsp"/>
+  
+  <p>Esta es mi pagina de inicio chevere.</p>
+  
 </body>
 </html>
