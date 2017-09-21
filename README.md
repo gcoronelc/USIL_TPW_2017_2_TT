@@ -15,7 +15,7 @@
 
 - Docente: Eric Gustavo Coronel Castillo
 - Blog: gcoronelc.blogspot.com
-- Email: egcc.usilgmail.com
+- Email: egcc.usil@gmail.com
 
 ## RECURSOS RECOMENDADOS
 
