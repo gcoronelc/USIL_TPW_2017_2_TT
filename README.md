@@ -1,9 +1,9 @@
-![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TT/master/Img/USIL_TPW_2017-2_TT.png)
-![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TM/master/Img/SpringFramework.png)
-![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TM/master/Img/DesarrollaSoftware.png)
-
-
 # TALLER DE PROGRAMACION WEB
+
+![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TT/master/Img/USIL_TPW_2017-2_TT.png)
+
+
+## TALLER DE PROGRAMACION WEB
 
 - Lugar: INSTITUTO EMPRENDEDORES
 - Inicio: 15-AGOSTO-2017
@@ -11,12 +11,13 @@
 - Martes: 12:50 - 16:30
 - Jueves: 12:50 - 14:30
 
-# DOCENTE
+## DOCENTE
 
 - Docente: Eric Gustavo Coronel Castillo
 - Blog: gcoronelc.blogspot.com
+- Email: egcc.usilgmail.com
 
-# RECURSOS RECOMENDADOS
+## RECURSOS RECOMENDADOS
 
 - Seminario de Java JDBC: http://goo.gl/fHb2yf
 - Spring Framework: http://gcoronelc.blogspot.pe/p/spring-framework.html
@@ -24,10 +25,12 @@
 - Artículo sobre Git y GitHub: http://goo.gl/6hZMfX
 - Pool de conexiones con Tomcat: http://goo.gl/ZdQQv0
 - Pool de conexiones con GlassFish: http://goo.gl/pyAt8d
+- Analisis y Diseño Orientado a Objetos: https://youtu.be/xyuyCoYKvy0
+- Pruebas de Software: https://youtu.be/pII2WpxJQg4
+- Pruebas de Cobertura: https://youtu.be/F0qx_WXz5Z8
 
 
-
-# Auto-Evaluación
+## Auto-Evaluación
 
 - Enlace 1: http://cibertest.com/test-examen/11/java
 - Enlace 2: http://www.digitallearning.es/tests/java-poo.html
@@ -54,5 +57,10 @@
 - Enlace 23: http://www.whizlabs.com
 
 
+## Recursos Finales
+
+![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TM/master/Img/SpringFramework.png)
+![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TM/master/Img/DesarrollaSoftware.png)
+![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TM/master/Img/java-cs.png)
 
 
