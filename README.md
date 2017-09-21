@@ -59,8 +59,8 @@
 
 ## Recursos Finales
 
-![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TM/master/Img/SpringFramework.png)
-![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TM/master/Img/DesarrollaSoftware.png)
-![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TM/master/Img/java-cs.png)
+![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TT/master/Img/SpringFramework.png)
+![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TT/master/Img/DesarrollaSoftware.png)
+![TALLER DE PROGRAMACION WEB](https://raw.githubusercontent.com/gcoronelc/USIL_TPW_2017_2_TT/master/Img/java-cs.png)
 
 
