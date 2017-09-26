@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DEMO 02</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="service/MateService.js"></script>
+	<style type="text/css">
+
+		button{
+			margin: 10px;
+			padding: 30px;
+			color: blue;
+			font-size: 30px;
+		}
+
+		tr{
+			margin: 10px;
+			padding: 20px;
+		}
+
+		td{
+			padding: 10px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>DISTANCIA ENTRE DOS PUNTOS</h1>
+
+	<form>
+		<table border="1" style="padding: 10px;">
+			<tr>
+				<td rowspan="2">Punto 1</td>
+				<td>Eje X</td>
+				<td><input type="text" id="p1x"></td>
+			</tr>
+			<tr>
+				<td>Eje Y</td>
+				<td><input type="text" id="p1y"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">Punto 2</td>
+				<td>Eje X</td>
+				<td><input type="text" id="p2x"></td>
+			</tr>
+			<tr>
+				<td>Eje Y</td>
+				<td><input type="text" id="p2y"></td>
+			</tr>
+			<tr>
+				<td colspan="3" style="text-align: center;">
+					<button id="btnProcesar" type="button">
+						Procesar
+					</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+
+
+
+	<script type="text/javascript">
+		
+		$("#btnProcesar").click( function(){ 
+			
+			// Datos
+			var p1x = parseFloat($("#p1x").val());
+			var p1y = parseFloat($("#p1y").val());
+			var p2x = parseFloat($("#p2x").val());
+			var p2y = parseFloat($("#p2y").val());
+			// Proceso
+			var bean = {
+				"punto1x":p1x,"punto1y":p1y,
+				"punto2x":p2x,"punto2y":p2y,
+				"distancia":0
+			};
+			bean = calcDistancia( bean );
+			// Reporte
+			var repo = "Distancia: " + bean.distancia;
+			alert( repo );
+		});
+
+	</script>
+	
+</body>
+</html>

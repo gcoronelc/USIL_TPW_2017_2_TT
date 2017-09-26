@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SUMAR CON JQUERY</title>
+ 	<script type="text/javascript" src="jquery.js"></script>
+	<style type="text/css">
+		
+		button{
+			margin: 10px;
+			padding: 30px;
+			color: blue;
+			font-size: 30px;
+		}
+
+		tr{
+			margin: 10px;
+			padding: 20px;
+		}
+
+		td{
+			padding: 10px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>SUMAR CON JQUERY</h1>
+
+	<form>
+		<table>
+			<tr>
+				<td>Número 1</td>
+				<td><input type="text" id="num1"></td>
+			</tr>
+			<tr>
+				<td>Número 2</td>
+				<td><input type="text" id="num2"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="button" id="btnProcesar">Procesar</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<script type="text/javascript">
+		
+		$("#btnProcesar").click( btnProcesarClick );
+
+		function btnProcesarClick(){
+			// Datos
+			var num1 = parseFloat($("#num1").val());
+			var num2 = parseFloat($("#num2").val());
+			// Proceso
+			var suma = num1 + num2;
+			// Reporte
+			alert("Suma: " + suma);
+		}
+
+	</script>
+	
+</body>
+</html>
