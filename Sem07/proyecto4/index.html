@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DEMO 02</title>
+	<link rel="stylesheet" href="css/estilos.css">	
+	<script type="text/javascript" src="jquery/jquery.js"></script>
+	<script type="text/javascript" src="service/MateService.js"></script>
+</head>
+<body>
+
+	<h1>DISTANCIA ENTRE DOS PUNTOS</h1>
+
+	<div class="panel">
+		<button class="botonDefault" id="btnFormulario">Formulario</button>
+		<button class="botonDefault" id="btnNuevo">Nuevo</button>
+	</div>
+
+	<div class="panel" id="panelFormulario">
+
+		<h2>Datos de Procesar</h2>
+		<form>
+			<table style="padding: 10px;">
+				<tr>
+					<td rowspan="2">Punto 1</td>
+					<td>Eje X</td>
+					<td><input type="text" id="p1x"></td>
+				</tr>
+				<tr>
+					<td>Eje Y</td>
+					<td><input type="text" id="p1y"></td>
+				</tr>
+				<tr>
+					<td rowspan="2">Punto 2</td>
+					<td>Eje X</td>
+					<td><input type="text" id="p2x"></td>
+				</tr>
+				<tr>
+					<td>Eje Y</td>
+					<td><input type="text" id="p2y"></td>
+				</tr>
+				<tr>
+					<td colspan="3" style="text-align: center;">
+						<button id="btnProcesar" class="botonForm" type="button">
+							Procesar
+						</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+
+	</div>
+
+	<div class="panel" id="panelReporte">
+
+		<h2>Reporte</h2>
+		<table>
+			<tr>
+				<td colspan="2">INPUT</td>
+			</tr>
+			<tr>
+				<td>Punto 1 -> X:</td>
+				<td><span id="repoP1x"></span></td>
+			</tr>
+			<tr>
+				<td>Punto 1 -> Y:</td>
+				<td><span id="repoP1y"></span></td>
+			</tr>
+			<tr>
+				<td>Punto 2 -> X:</td>
+				<td><span id="repoP2x"></span></td>
+			</tr>
+			<tr>
+				<td>Punto 1 -> Y:</td>
+				<td><span id="repoP2y"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2">OUTPUT</td>
+			</tr>
+			<tr>
+				<td>Distancia:</td>
+				<td><span id="repoDistancia"></span></td>
+			</tr>
+		</table>
+
+	</div>
+
+
+	<script type="text/javascript">
+
+		// Init Page
+		$("#panelFormulario").hide();
+		$("#panelReporte").hide();
+		
+		// Programar botones
+		$("#btnFormulario").click( fnBtnFormularioClick );
+		$("#btnNuevo").click( fnBtnNuevoClick );
+		$("#btnProcesar").click( fnBtnProcesarClick );
+
+		function fnBtnFormularioClick(){
+			$("#panelFormulario").show();
+			$("#panelReporte").hide();
+		}
+
+		function fnBtnNuevoClick(){
+			// Limpia los controles del formulario
+			$("#p1x").val("");
+			$("#p1y").val("");
+			$("#p2x").val("");
+			$("#p2y").val("");
+			// Mostrar formulario
+			$("#panelFormulario").show();
+			$("#panelReporte").hide();
+		}
+
+
+		function fnBtnProcesarClick(){ 
+			
+			// Datos
+			var p1x = parseFloat($("#p1x").val());
+			var p1y = parseFloat($("#p1y").val());
+			var p2x = parseFloat($("#p2x").val());
+			var p2y = parseFloat($("#p2y").val());
+			// Proceso
+			var bean = {
+				"punto1x":p1x,"punto1y":p1y,
+				"punto2x":p2x,"punto2y":p2y,
+				"distancia":0
+			};
+			bean = calcDistancia( bean );
+			// Reporte
+			$("#repoP1x").text(bean.punto1x);
+			$("#repoP1y").text(bean.punto1y);
+			$("#repoP2x").text(bean.punto2x);
+			$("#repoP2y").text(bean.punto2y);
+			$("#repoDistancia").text(bean.distancia);
+			$("#panelFormulario").hide();
+			$("#panelReporte").show();
+		}
+
+	</script>
+
+</body>
+</html>
