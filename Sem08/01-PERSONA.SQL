@@ -1,3 +1,21 @@
+/*
+Empresa        :  EGCC
+Software       :  Sistema de Condominios
+DBMS           :  MySQL Server
+Base de Datos  :  MICONDOMINIO
+Script         :  Crea el esquema PERSONA
+Responsable    :  Ing. Eric Gustavo Coronel Castillo
+Telefono       :  (511) 9966-64457
+Email          :  gcoronelc@gmail.com
+Sitio Web      :  http://www.desarrollasoftware.com
+Blog           :  http://gcoronelc.blogspot.com
+*/
+
+
+
+-- =============================================
+-- Creación de tablas
+-- =============================================
 
 CREATE TABLE TPERSONA
 (
@@ -24,6 +42,10 @@ CREATE TABLE PERSONA
 		REFERENCES TPERSONA (IDTPERSONA)
 );
 
+
+-- =============================================
+-- Carga de Datos
+-- =============================================
 
 -- TIPOS DE PERSONAS
 INSERT INTO TPERSONA(NOMBRE) VALUES
