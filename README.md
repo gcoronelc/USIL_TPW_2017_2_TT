@@ -28,7 +28,9 @@
 - Analisis y Diseño Orientado a Objetos: https://youtu.be/xyuyCoYKvy0
 - Pruebas de Software: https://youtu.be/pII2WpxJQg4
 - Pruebas de Cobertura: https://youtu.be/F0qx_WXz5Z8
-- Programadores Modernos: https://youtu.be/QGpoxFmrkIY
+- Programador Moderno: https://youtu.be/QGpoxFmrkIY
+- Unit Test: https://youtu.be/6EqQWVQNwlw
+- Unit Test: https://youtu.be/B0jf0ENdFsY
 
 ## Auto-Evaluación
 
