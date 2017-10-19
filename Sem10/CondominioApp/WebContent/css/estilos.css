@@ -2,7 +2,7 @@
 
 body{
 	background-color: #FFF8DC;
-	color: #800000;
+	color: #34495e;
 	font-size: 14px;
 	font-family: Arial;
 	padding: 5px;
@@ -30,3 +30,43 @@ h1{
   color:white;	
   height: 30px;
 }
+
+
+.egcc_pagina{
+  width: 900px;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: #FFFACD;
+}
+
+.egcc_cabecera{
+  width:880px;
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+}
+
+.egcc_menu{
+  width: 880px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #6495ED;
+  color: white;
+}
+
+.egcc_contenido{
+  width: 880px;
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  color: #34495e;
+}
+
+.egcc_pie{
+  width: 880px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #2980b9;
+  color: white;
+}
+
