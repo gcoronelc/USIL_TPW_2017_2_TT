@@ -79,16 +79,19 @@ values
 insert into TORRE(IDTORRE,NOMBRE) values
 (1,'TORRE 1'),
 (2,'TORRE 2'),
-(3,'TORRE 3');
+(3,'TORRE 3'),
+(99,'TORRE VIRTUAL');
 
 
 -- Tabla INMUEBLE
 
 insert into INMUEBLE(IDINMUEBLE,PISO,CODIGO,DESCRIPCION,
 IDPERSONA,IDTINMUEBLE,IDTORRE,ACTIVO) values
-(1,1,'OF-101','Oficina de Gustavo',1,4,1,1),
-(2,2,'DE-201','Departamento de Gustavo',1,2,1,1),
-(3,-1,'S1-102','Cochera de Gustavo',1,2,1,1);
+(1,0,'IN-001','CONDOMINIO',1,1,99,1),
+(2,1,'OF-101','Oficina de Gustavo',1,4,1,1),
+(3,2,'DE-201','Departamento de Gustavo',1,2,1,1),
+(4,-1,'S1-102','Cochera de Gustavo',1,2,1,1);
+
 
 
 

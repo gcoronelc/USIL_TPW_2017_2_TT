@@ -69,3 +69,18 @@ CREATE TABLE OBLIGACION
 ) ENGINE = 'INNODB';
 
 
+-- =============================================
+-- Datos
+-- =============================================
+
+
+- Tabla TOBLIGACION
+
+INSERT INTO TOBLIGACION(IDTOBLIGACION,NOMBRE) VALUES
+(1,'AGUA'),
+(2,'MANTENIMIENTO'),
+(3,'OTROS');
+
+
+
+

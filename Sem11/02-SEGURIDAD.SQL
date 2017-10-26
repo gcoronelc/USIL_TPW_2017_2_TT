@@ -66,10 +66,10 @@ insert into rol(idrol, nombre, descripcion) values
 -- Tabla: USUARIO
 
 insert into usuario(IDPERSONA,IDROL,USUARIO,CLAVE,ESTADO) VALUES
-(1,1,'gustavo',SHA('gustavo'),1),
-(3,4,'karla',SHA('karla'),1),
-(2,3,'claudia',SHA('claudia'),1),
-(8,2,'carlos',SHA('carlos'),1);
+(2,1,'gustavo',SHA('gustavo'),1),
+(4,4,'karla',SHA('karla'),1),
+(3,3,'claudia',SHA('claudia'),1),
+(9,3,'carlos',SHA('carlos'),1);
 
 
 
