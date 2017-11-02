@@ -12,6 +12,18 @@ public class ReporteService {
   
   @Autowired
   private JdbcTemplate jdbcTemplate;
+  
+  
+  public List<String> leerCiclos(){
+    
+    String sql = "select idciclo from ciclo order by 1 desc";
+    
+    List<String> lista = jdbcTemplate.queryForList(sql, String.class);
+    
+    return lista;
+    
+  }
+  
 
   public List<Map<String, Object>> repoResumenCurso(String ciclo){
     

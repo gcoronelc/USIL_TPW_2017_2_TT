@@ -8,7 +8,7 @@
     <td>
       <img src='<c:url value="img/logo.png" />' />
     </td>
-    <td>
+    <td style="text-align: right;">
       Usuario: Gustavo Coronel<br/>
       <a href="#">Salir</a>
     </td>
