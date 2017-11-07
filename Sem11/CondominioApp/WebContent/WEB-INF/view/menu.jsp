@@ -5,7 +5,7 @@
 	<ul>
 
     <!-- Página de inicio -->
-		<li><a href="#">Home</a></li>
+		<li><a href="main.htm">Home</a></li>
 
     <!-- Menú Procesos -->
 		<li><a href="#">Procesos</a>

@@ -9,8 +9,8 @@
       <img src='<c:url value="img/logo.png" />' />
     </td>
     <td style="text-align: right;">
-      Usuario: Gustavo Coronel<br/>
-      <a href="#">Salir</a>
+      Usuario: ${sessionScope.usuario.nombre}, ${sessionScope.usuario.apellido}<br/>
+      <a href="salir.htm">Salir</a>
     </td>
   </tr>
 </table>

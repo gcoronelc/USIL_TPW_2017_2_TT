@@ -1,5 +1,7 @@
 package pe.egcc.condominio.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,14 +27,16 @@ public class AppController {
   public String ingresar(
       @RequestParam("usuario") String usuario, 
       @RequestParam("clave") String clave,
-      Model model){
+      Model model,
+      HttpSession session){
     
     String destino;
     
     try {
       
       Persona bean = logonService.validarUsuario(usuario, clave);
-      model.addAttribute("bean", bean);
+      
+      session.setAttribute("usuario", bean);
       destino = "main";
       
     } catch (Exception e) {
@@ -44,6 +48,15 @@ public class AppController {
     return destino;
   }
   
+  @RequestMapping(value="salir.htm", method=RequestMethod.GET)
+  public String salir(HttpSession session){
+	  session.invalidate();
+	  return "index";
+  }
   
+  @RequestMapping(value="main.htm", method=RequestMethod.GET)
+  public String main(){
+	  return "main";
+  }
   
 }

@@ -9,7 +9,7 @@ body{
 }
 
 h1{
-	font-size: 16px;
+	font-size: 2em;
 	color: #2c3e50;
 	border-bottom: 2px solid #2c3e50;
 }
@@ -70,3 +70,19 @@ h1{
   color: white;
 }
 
+
+.egcc_error{
+  font-size: 1.3em;	
+  margin: 5px;
+  padding: 5px;
+  background-color: #e74c3c;
+  color: #ecf0f1;
+}
+
+.egcc_info{
+  font-size: 1.3em;	
+  margin: 5px;
+  padding: 5px;
+  background-color: #CCF8D2;
+  color: #34495e;
+}

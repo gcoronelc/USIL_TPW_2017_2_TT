@@ -33,7 +33,9 @@ href='<c:url value="css/estilos.css" />'>
     </div>
     <h1>INICIO DE SESIÓN</h1>
     
-    <p>Error: ${error}</p>
+    <c:if test="${ error != null }">
+    <div class="egcc_error">${error}</div>
+    </c:if>
     
     <div class="egcc_panel">
       <form method="post" action="ingresar.htm">
