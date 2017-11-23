@@ -1,23 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package aleatorio;
 
 import java.util.Random;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Profesor
- */
 public class AleatorioView extends javax.swing.JFrame {
 
   private String[] grupos = {"ASTO", "FERNANDEZ", "GONZALES",
     "HUACSO", "JUAG", "MENDOZA"};
 
-  private int[] orden = new int[6];
+  private int[] orden = new int[grupos.length];
   
   private Random random = new Random();
 
@@ -153,7 +144,7 @@ public class AleatorioView extends javax.swing.JFrame {
     for (int i = 0; i < grupos.length; i++) {
       boolean nuevo = false;
       while (!nuevo) {
-        int n = random.nextInt(6) + 1;
+        int n = random.nextInt(grupos.length) + 1;
         boolean existe = false;
         for (int num : orden) {
           if (n == num) {
