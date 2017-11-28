@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SimpleJspServletDB</display-name>
+
+  <servlet>
+    <description></description>
+    <display-name>UserController2</display-name>
+    <servlet-name>UserController2</servlet-name>
+    
+    <servlet-class>com.daniel.controller.UserController2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserController2</servlet-name>
+    <url-pattern>/UserController2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserController</display-name>
+    <servlet-name>UserController</servlet-name>
+    
+    <servlet-class>com.daniel.controller.UserController</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>UserController3</display-name>
+    <servlet-name>UserController3</servlet-name>
+    <servlet-class>com.daniel.controller.UserController3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController3</servlet-name>
+    <url-pattern>/UserController3</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserController4</display-name>
+    <servlet-name>UserController4</servlet-name>
+    
+    <servlet-class>com.daniel.controller.UserController4</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserController4</servlet-name>
+    <url-pattern>/UserController4</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserController5</display-name>
+    <servlet-name>UserController5</servlet-name>
+    
+    <servlet-class>com.daniel.controller.UserController5</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserController5</servlet-name>
+    <url-pattern>/UserController5</url-pattern>
+  </servlet-mapping>
+    <!-- Application Context -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/applicationContext.xml</param-value>
+  </context-param>
+  <listener>
+    <listener-class>
+      org.springframework.web.context.ContextLoaderListener
+    </listener-class>
+  </listener>
+  
+  <!-- Dispatcher -->
+  <servlet>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>
+      org.springframework.web.servlet.DispatcherServlet
+    </servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>*.htm</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Tiempo de session -->
+  <session-config>
+    <session-timeout>
+      30
+    </session-timeout>
+  </session-config>
+  
+  <!-- Pagina de inicio -->
+  <welcome-file-list>
+    <welcome-file>index.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+</web-app>
